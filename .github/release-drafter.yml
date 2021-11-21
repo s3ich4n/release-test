@@ -18,9 +18,11 @@ version-resolver:
   major:
     labels:
       - 'major'
+      - 'release: GA'
   minor:
     labels:
       - 'minor'
+      - 'release: RC'
   patch:
     labels:
       - 'patch'
