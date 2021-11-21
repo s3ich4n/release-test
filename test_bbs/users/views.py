@@ -49,3 +49,7 @@ user_redirect_view = UserRedirectView.as_view()
 
 def hello(request):
     return HttpResponse("index.html")
+
+
+def hello2(request):
+    return HttpResponse("index2.html")
