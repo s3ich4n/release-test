@@ -27,3 +27,8 @@ jobs:
           disable-autolabeler: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Microsoft Teams Webhook Notifications
+        uses: dhollerbach/actions.send-message-to-ms-teams@1.0.10
+        with:
+          webhook: ${{ secrets.WEBHOOK_URL }}
+          message: 'release alert!'
