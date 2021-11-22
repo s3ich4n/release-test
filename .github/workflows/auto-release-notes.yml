@@ -28,7 +28,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Microsoft Teams Webhook Notifications
-        uses: dhollerbach/actions.send-message-to-ms-teams@1.0.10
+        uses: dhollerbach/actions.send-message-to-ms-teams@v3
         with:
           webhook: ${{ secrets.WEBHOOK_URL }}
           message: 'release alert!'
